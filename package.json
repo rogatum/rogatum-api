@@ -1,0 +1,27 @@
+{
+  "name": "rogatum-api",
+  "version": "1.0.0",
+  "description": "Rest API for Roagtum",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogatum/rogatum-api.git"
+  },
+  "author": "Rob Sedgwick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rogatum/rogatum-api/issues"
+  },
+  "homepage": "https://github.com/rogatum/rogatum-api#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "mongoose": "^4.10.6"
+  }
+}
