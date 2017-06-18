@@ -12,6 +12,14 @@ exports.list = function(req, res) {
   });
 };
 
+exports.find = function(req, res) {
+  Stub.find({name:  { "$regex": req.params.string, "$options": "i" } }, function (err, stubs) {
+    if (err)
+      res.send(err);
+    res.json(stubs);
+});
+};
+
 
 
 
