@@ -11,4 +11,7 @@ module.exports = function(app) {
     .get(stubController.read)
     .put(stubController.update)
     .delete(stubController.remove);
+
+    app.route('/stubs/search/:string')
+    .get(stubController.find);
 };
